@@ -1,0 +1,8 @@
+Loops through Youtube playlists.
+My first attempt at a re-write in Python, the original file is a bash script.
+
+Attempted to use Python modules to handle the keyboard and mouse actions (mouse, keyboard, pynput.mouse, pynput.keyboard).
+Never managed to get them working, Python calls them as shell(sh) commands which aren't recognised while using os.system 
+and subprocess.Popen.
+
+As a workaround I put the Linux 'xdotool' commands in lists and called those.
