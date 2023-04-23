@@ -1,0 +1,21 @@
+The plan is to create a basic analog to the Windows program "Voice Attack" for gaming...aka.Wingman.
+Taking input from the mic and performing a corresponding action via. keystrokes/mouse buttons.
+
+Example: In a flight sim style game, saying "landing gear" would perform the keyboard shortcut for toggling the landing gear of an aircraft.
+
+As I'm only 3 days into learning Python as of writing this, I need to break down the elements to figure out how things are working/will eventually 
+work.
+
+Done:
+dictaphone.py - takes mic input and saves it to a list.
+
+To Do:
+*Figure out how to take that list entry (in script or use saved file?), compare it to a pre-set dictionary key to get the associated value which will 
+ be the keyboard command. example: dictionary={"landing gear":"keyboard.press('l')"}
+ That command can then be ran via. maybe subprocess or just the bash equivalent command to perform the end result action.
+*Figure out how to keep the Wingman program running in the background until a keypress toggles a listen mode to start the "dictaphone" stage.
+
+Ideally the program will keep running after performing its action, but not against letting the program restart itself after each use as the list 
+only needs to hold a single entry to compare at a time...depends on how long it takes to be ready again.
+
+Probably missing some steps but I don't know what I don't know yet.
