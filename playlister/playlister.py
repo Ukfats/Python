@@ -44,21 +44,24 @@ def looper():
  
  time.sleep(timer1)
  for i in range (1):
+  time.sleep (6)
   subprocess.Popen((rancoord),shell=True)
   time.sleep (5) 
-  subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
+  #subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
  
  time.sleep(timer2)
  for i in range (1):
+  time.sleep (7)
   subprocess.Popen((rancoord),shell=True)
   time.sleep (6) 
-  #subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
+  subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
 
  time.sleep (timer3)
  for i in range (1):
+  time.sleep (5)
   subprocess.Popen((rancoord),shell=True)
   time.sleep (5) 
-  #subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
+  subprocess.Popen(('xdotool key --clearmodifiers k'),shell=True)
   time.sleep (timer4)
   subprocess.Popen(('xdotool mousemove 460 919 click --repeat 2 1'),shell=True)
   print (colored("Stage Complete: LOOPER", 'blue', attrs=['blink']))
@@ -73,9 +76,9 @@ print(colored("Stage Complete: VPN", 'green', attrs=['blink']))
 time.sleep(3)
 subprocess.Popen(('xdotool mousemove 1827 193 click --repeat 2 1'),shell=True)
 time.sleep(3)
-subprocess.Popen(('xdotool mousemove 1693 555 click --repeat 2 1'),shell=True)
+subprocess.Popen(('xdotool mousemove 1623 555 click --repeat 2 1'),shell=True)
 time.sleep(3)
-subprocess.Popen(('xdotool mousemove 1827 193 click --repeat 2 1'),shell=True)
+#subprocess.Popen(('xdotool mousemove 1827 193 click --repeat 2 1'),shell=True)
 print(colored("Stage Complete: USER AGENT", 'green', attrs=['blink']))
 
 #Stage3: Opening Site stage.
@@ -89,6 +92,7 @@ print(colored("Stage Complete: OPEN SITE", 'yellow', attrs=['blink']))
 
 #Stage4: Selecting random playlist stage and sleep.
 timerl=(random.randint(31, 53))
+time.sleep(8)
 for i in range (1):
   subprocess.Popen((rancoord),shell=True)
   time.sleep(timerl)
