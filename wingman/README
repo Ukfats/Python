@@ -1,4 +1,4 @@
-The plan is to create a basic analog to the Windows program "Voice Attack" for gaming...aka.Wingman.
+The plan is to create a basic functionality analog to the program "Voice Attack" for gaming...budget voice attack aka "bva".
 Taking input from the mic and performing a corresponding action via. keystrokes/mouse buttons.
 
 Example: In a flight sim style game, saying "landing gear" would perform the keyboard shortcut for toggling the landing gear of an aircraft.
@@ -7,8 +7,10 @@ As I'm only 3 days into learning Python as of writing this, I need to break down
 work.
 
 Done:
-dictaphone.py - takes mic input and saves it to a list.
-doppleganger.py - takes an input phrase and compares it to a list of commands stored in a dictionary and runs the command associated with the phrase.
+# dictaphone.py - takes mic input and saves it to a list.
+# doppleganger.py - takes an input phrase and compares it to a list of commands stored in a dictionary and runs the command associated with the phrase.
+# bva.py - joined dictaphone and doppleganger functions, not takes mic input > converts audio to string > finds dictionary value for the string and 
+runs that as an xdotool keyboard command.
 
 To Do:
 *Figure out how to keep the Wingman program running in the background until a keypress toggles a listen mode to start the "dictaphone" stage.
