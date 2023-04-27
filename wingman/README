@@ -6,16 +6,25 @@ Example: In a flight sim style game, saying "landing gear" would perform the key
 As I'm only 3 days into learning Python as of writing this, I need to break down the elements to figure out how things are working/will eventually 
 work.
 
+REQUIREMENTS:
+Speech_Recognition - pip3 install speechrecognition
+Sound Device - pip3 install sounddevice
+
+
 Done:
 # dictaphone.py - takes mic input and saves it to a list.
 # doppleganger.py - takes an input phrase and compares it to a list of commands stored in a dictionary and runs the command associated with the phrase.
 # bva.py - joined dictaphone and doppleganger functions, not takes mic input > converts audio to string > finds dictionary value for the string and 
 runs that as an xdotool keyboard command.
+# Added error handling (provisional), it hides the speechrecognition errors due to time out/not understanding. 
+However it stops the program from exiting, while this is a bug it also makes the program work how I want it to by constantly running in the background 
+and doing the actions it is told to.
 
 To Do:
 *Figure out how to keep the Wingman program running in the background until a keypress toggles a listen mode to start the "dictaphone" stage.
-
-*Add error handling for voice input so it doesn't crash out if a voice cannot be heard or transcribed.
+**Add error handling for voice input so it doesn't crash out if a voice cannot be heard or transcribed.
+Might need to modify the error handling to quit the program after hiding the error and potentially setting the program as a keybinding in Linux 
+to call it.
 
 Ideally the program will keep running after performing its action, but not against letting the program restart itself after each use as the list 
 only needs to hold a single entry to compare at a time...depends on how long it takes to be ready again.
