@@ -16,7 +16,7 @@ Done:
 # doppleganger.py - takes an input phrase and compares it to a list of commands stored in a dictionary and runs the command associated with the phrase.
 # bva.py - joined dictaphone and doppleganger functions, not takes mic input > converts audio to string > finds dictionary value for the string and 
 runs that as an xdotool keyboard command.
-# Added error handling (provisional), it hides the speechrecognition errors due to time out/not understanding. 
+# Added error handling (provisional fix and added to the "bva1.py" version), it hides the speechrecognition errors due to time out/not understanding. 
 However it stops the program from exiting, while this is a bug it also makes the program work how I want it to by constantly running in the background 
 and doing the actions it is told to.
 
