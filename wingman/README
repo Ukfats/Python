@@ -13,6 +13,8 @@ doppleganger.py - takes an input phrase and compares it to a list of commands st
 To Do:
 *Figure out how to keep the Wingman program running in the background until a keypress toggles a listen mode to start the "dictaphone" stage.
 
+*Add error handling for voice input so it doesn't crash out if a voice cannot be heard or transcribed.
+
 Ideally the program will keep running after performing its action, but not against letting the program restart itself after each use as the list 
 only needs to hold a single entry to compare at a time...depends on how long it takes to be ready again.
 
