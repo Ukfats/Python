@@ -3,6 +3,7 @@ import sounddevice as dev
 import subprocess
 
 #IMPORTANT: uses google for the transciption of voice>text so an internet connection is required!.
+#Limitations are how well the google recognition can make out words, some words are complicated and not all mics are clear.
 
 #Get a list of connected audio devices, sequencial number on that list is the "device_index=" number 
 #e.g: number 10 on the list would be "device_index=9"
@@ -25,9 +26,9 @@ with mic as source:
 #Edit the dictionary value to the command you want to run.
 #Format = {'voice_command_phrase' : 'keyboard_command_permormed'}
 command_list = {
-             'wheel' : 'Super_L', 
-             'flare' : 'F12', 
-             'purple' : 'F12'
+             'inventory' : 'Super_L', 
+             'skills' : 'F12', 
+             'pause' : 'F12'
             }
 
 #Convert voice command into keyboard command.
